@@ -1,0 +1,9 @@
+a=int(input("enter a "))
+b=int(input("enter b "))
+print("a value before swap=", a)
+print("b value before swap=", b)
+a=a+b
+b=a-b
+a=a-b
+print("a value after swap=", a)
+print("b value after swap=", b)

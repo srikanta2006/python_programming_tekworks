@@ -1,0 +1,31 @@
+def NumNotes(n):
+    n1=n//2000
+    n=n%2000
+    n2k=n1
+    n1+=n//500
+    n500=n1-n2k
+    n=n%500
+    n1+=n//200
+    n200=n1-n2k-n500
+    n=n%200
+    n1+=n//100
+    n100=n1-n2k-n500-n200
+    n=n%100
+    n1+=n//50
+    n50=n1-n2k-n500-n200-n100
+    n=n%50
+    n1+=n//20
+    n20=n1-n2k-n500-n200-n100-n50
+    n=n%20
+    n1+=n//10
+    n10=n1-n2k-n500-n200-n100-n50-n20
+    print("2000->",n2k)
+    print("500->",n500)
+    print("200->",n200)
+    print("100->",n100)
+    print("50->",n50)
+    print("20->",n20)
+    print("10->",n10)
+    return n1
+n=int(input("Enter"))
+print(NumNotes(n))
